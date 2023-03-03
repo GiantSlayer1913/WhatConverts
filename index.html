@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="https://df8axwi1m4fag.cloudfront.net/52-1627046865_favicon.png" />
+	<title>Login | Demo Agency</title>
+	<link href="/css/main.css" rel="stylesheet" />
+	<link href="/css/all.min.css" rel="stylesheet" />
+	<link href="/generated/elements.css?1677510584" rel="stylesheet" />
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/wc.js?1677182642"></script>
+	<script src="/generated/elements.js?1677510584"></script>
+</head>
+
+<body>
+	<div class="alert" role="alert">
+		<div class="alert-icon">
+			<div class="icon"><i></i></div>
+		</div>
+		<div class="alert-message"><span></span>
+			<div class="message"></div>
+		</div>
+		<div class="alert-action">
+			<button class="button clo def lg" onclick="hideAlert()"><div class="icon sz16"><i class="fas fa-times"></i></div></button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="public-header row cnt" id="public_header_uid_bfbmqjybbwfjjrjmjfm">
+			<div class="col col-4">
+				<div class="login-img">
+					<a href="/"><img src="https://df8axwi1m4fag.cloudfront.net/52-1617215348.png" alt="Demo Agency" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="row cnt">
+			<div class="col col-4">
+				<div class="card-settings mgb4 lg" id="card_settings_uid_byqfbqbbbwfjjrjmjfm">
+					<div id="loading_spinner_uid_bcqjqyrbbwfjjrjmjfm" class="loader sm " style="display:block;">
+						<img src="/assets/images/loader.svg" />
+						<p>Loading...</p>
+					</div>
+					<div id="loading_spinner_content_uid_bcqjqyrbbwfjjrjmjfm" style="display:none;">
+						<form role="form" onsubmit="event.preventDefault();">
+							<div class="card-settings-header mgb3" id="card_settings_header_uid_bywbyyjbbwfjjrjmjfm">
+								<div class="wcsh-row">
+									<h2>Hi, welcome! Login and see what marketing converts.</h2>
+								</div>
+							</div>
+							<input name="odtrcowsfy" type="hidden" />
+							<div class="field mgb3 lg def">
+								<div class="label md " id="label_uid_bywbrqbbbwfjjrjmjfm">
+									Email Address
+								</div>
+								<div class="input lg  " id="input_uid_bywbfcbbbwfjjrjmjfm">
+									<input tabindex="0" autofocus="" class="form-control" placeholder="Enter Email Address" name="email" type="text" maxlength="100" />
+</div>
+								</div>
+								<div class="field mgb4 lg def">
+									<div class="label md " id="label_uid_bywwbtybbwfjjrjmjfm">
+										Password
+									</div>
+									<div class="input lg  " id="input_uid_bywbrrcbbwfjjrjmjfm">
+										<input tabindex="0" class="form-control" placeholder="Enter Password" name="password" type="password" />
+</div>
+									</div>
+									<div class="field-button mgb3" id="field_button_uid_byqyftqbbwfjjrjmjfm">
+										<button class="button  xlg def ctd" id="button_uid_bywwbjrbbwfjjrjmjfm_submit_uid_bcqjqyrbbwfjjrjmjfm" onclick="attemptLogin()" tabindex="0" name="log_in" type="submit">
+<div class="button-loaded" id="button_loaded_submit_uid_bcqjqyrbbwfjjrjmjfm">
+<span>Log In</span>
+</div>
+<div class="button-loader" id="button_loader_submit_uid_bcqjqyrbbwfjjrjmjfm">
+<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+</path>
+</svg>
+</div>
+</button>
+										<style type="text/css" not_gathered="">
+											.button {
+												display: inline-block;
+												font-size: inherit;
+												border-radius: 3px;
+												box-sizing: border-box;
+												cursor: pointer;
+												text-align: center;
+												-webkit-transition: all .2s ease-in-out;
+												-moz-transition: all .2s ease-in-out;
+												-o-transition: all .2s ease-in-out;
+												transition: all .2s ease-in-out;
+												position: relative;
+											}
+
+											.button-loaded {
+												display: inline-block;
+												font-size: inherit;
+												position: relative;
+											}
+
+											.button span {
+												display: inline-block;
+												font-weight: 700;
+												vertical-align: middle;
+												line-height: inherit;
+												-webkit-transition: all .2s ease-in-out;
+												-moz-transition: all .2s ease-in-out;
+												-o-transition: all .2s ease-in-out;
+												transition: all .2s ease-in-out;
+											}
+
+											.button.xlg {
+												padding: 0 26px;
+												height: 60px;
+												line-height: 60px;
+											}
+
+											.button.xlg span {
+												font-size: 1.5em;
+											}
+
+											.button.ctd.def {
+												background: #096692;
+											}
+
+											.button.ctd.def:hover {
+												background: #f7685e;
+											}
+
+											.button.ctd.def span,
+											.button.ctd.def .icon {
+												color: #ffffff;
+											}
+
+											.button.txt {
+												padding: 0 !important;
+												height: 15px;
+												line-height: 15px;
+											}
+
+											.button.txt.def {
+												color: #5373BD;
+											}
+
+											.button-loader {
+												display: none;
+												vertical-align: middle;
+												height: 100%;
+											}
+
+											.button.xlg .button-loader svg {
+												width: 50px;
+												height: 50px;
+												margin: 5px 0;
+											}
+
+											.button.ctd.def .button-loader svg path {
+												fill: #FFFFFF;
+											}
+
+											.button.otd.def .button-loader svg path {
+												fill: #5373BD;
+											}
+
+											@media (max-width: 1620px) {}
+
+											@media (max-width: 1300px) {}
+
+											@media (max-width: 1040px) {}
+
+											@media (max-width: 820px) {}
+
+											@media (max-width: 500px) {
+												.button {
+													overflow: hidden;
+												}
+
+												.button.xlg {
+													padding: 0 5px;
+												}
+											}
+										</style>
+									</div>
+									<div class="field-button " id="field_button_uid_byqyrfbbbwfjjrjmjfm">
+										<a class="button  lg def txt" id="button_uid_byqyfrybbwfjjrjmjfm_0" tabindex="0"
+											href="/reset-request" name="">
+											<span class="">Forgot Password?</span>
+										</a>
+									</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var requestRunning = false;
+$(function() {
+hideLoadingSpinner("uid_bcqjqyrbbwfjjrjmjfm");
+$('input[ name="email"]').focus();
+});
+function attemptLogin() {
+hideAlert();
+if ($('input[ name="odtrcowsfy"]').val() > '') return;
+if (requestRunning) return;
+requestRunning = true;
+showButtonLoading('submit_uid_bcqjqyrbbwfjjrjmjfm');
+WC.ajax('/includes/func/login/login', {
+data: {
+token: '735c824f1e3001bf684cdbd3209785fbba727c5b138d5deac2f161c30e98093f56d632be3d2ac3b86a02add6701f4efbd298fab0c882d71c9f58ed21bfe193ff',
+client: $('input[ name="odtrcowsfy"]').val(),
+canvas: getCanvasFingerprint(),
+email: $('input[ name="email"]').val(),
+password: $('input[ name="password"]').val(),
+},
+error: (message) => {
+requestRunning = false;
+hideButtonLoading('submit_uid_bcqjqyrbbwfjjrjmjfm');
+showAlert(message, 'danger');
+},
+success: (data) => {
+requestRunning = false;
+window.location.replace(data);
+}
+});
+}
+function getCanvasFingerprint() {
+var canvas = document.createElement('canvas');
+var ctx = canvas.getContext('2d');
+var txt = '~czas9!dm..$i#po((^@KXrbww';
+ctx.textBaseline = "top";
+ctx.font = "16px 'Arial'";
+ctx.textBaseline = "alphabetic";
+ctx.rotate(.15);
+ctx.fillStyle = "#f60";
+ctx.fillRect(125,1,62,20);
+ctx.fillStyle = "#069";
+ctx.fillText(txt, 2, 15);
+ctx.fillStyle = "rgba(102, 200, 0, 0.7)";
+ctx.fillText(txt, 4, 17);
+ctx.shadowBlur=10;
+ctx. shadowColor="blue";
+ctx.fillRect(-20,10,234,5);
+return canvas.toDataURL();
+}
+			</script>
+		</div>
+	</div>
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-56173127-6"></script>
+	<script not_gathered="">
+		window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-56173127-6');
+gtag('config', 'UA-56173127-1');
+	</script>
+</body>
+
+</html>
